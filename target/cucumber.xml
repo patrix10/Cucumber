@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="15.892">
+    <testcase classname="Login functionality on Practice Test Automation site" name="Positive LogIn test" time="6.949">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user enters student and Password123....................................passed
+And clicks login button.....................................................passed
+Then user logged in successfully to home page...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality on Practice Test Automation site" name="Negative username test" time="4.015">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user enters "incorrectUser" and "Password123"..........................passed
+And clicks login button.....................................................passed
+Then error message is displayed for invalid username........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality on Practice Test Automation site" name="Negative password test" time="4.65">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user gives "student" and "incorrectPassword" for login.................passed
+And clicks login button.....................................................passed
+Then error message is displayed for invalid password........................passed
+]]></system-out>
+    </testcase>
+</testsuite>
