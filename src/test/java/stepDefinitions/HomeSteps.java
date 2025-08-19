@@ -14,7 +14,8 @@ public class HomeSteps {
 	
 	public HomeSteps(TestContext context) {
 		this.context = context;
-		this.homePage = context.pageObjectManager.getHomePage();
+		this.driver = context.getDriver();
+		this.homePage = new HomePage(driver);
  	}
 	
 	@Then("user logged in successfully to home page")

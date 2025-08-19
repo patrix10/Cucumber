@@ -7,7 +7,6 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestBase {
@@ -35,10 +34,6 @@ public class TestBase {
 			if(browser.equalsIgnoreCase("firefox"))
 			{
 				driver = new FirefoxDriver();
-			}
-			if(browser.equalsIgnoreCase("edge"))
-			{
-				driver = new EdgeDriver();
 			}
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		    driver.get(url);

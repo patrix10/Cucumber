@@ -14,7 +14,8 @@ public class LoginSteps {
 	
 	public LoginSteps(TestContext context) {
 		this.context = context;
-		this.loginPage = context.pageObjectManager.getLoginPage();
+		this.driver = context.getDriver();
+		this.loginPage = new LoginPage(driver);
  	}
 
     @Given("user is on login page")

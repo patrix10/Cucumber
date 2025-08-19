@@ -4,17 +4,19 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObjects.PageObjectManager;
 
 public class TestContext {
-	public WebDriver driver;
-	public PageObjectManager pageObjectManager;
+	private WebDriver driver;
 	public TestBase testBase;
 	public GenericUtils genericUtils;
 	
 	public TestContext() throws IOException {
 		testBase = new TestBase();
-		pageObjectManager = new PageObjectManager(testBase.WebDriverManager());
-		genericUtils = new GenericUtils(testBase.WebDriverManager());
+		driver = testBase.WebDriverManager();
+		genericUtils = new GenericUtils(driver);
 	}
+	
+	public WebDriver getDriver() {
+        return driver;
+    }
 }

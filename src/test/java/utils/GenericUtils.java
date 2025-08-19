@@ -1,22 +1,16 @@
 package utils;
 
-import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GenericUtils {
 	public WebDriver driver;
-	public WebDriverWait wait;
-	
-	public static final int EXPLICIT_WAIT = 10;
 	
 	public GenericUtils(WebDriver driver)
 	{
 		this.driver = driver;
-		wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
 	}
 	
     //genericutils are used for
