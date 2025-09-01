@@ -1,10 +1,13 @@
+pageObjects\LogoutPage.class
 stepDefinitions\LoginSteps.class
 utils\TestContext.class
 pageObjects\HomePage.class
-pageObjects\PageObjectManager.class
+stepDefinitions\LogoutSteps.class
 utils\GenericUtils.class
 stepDefinitions\Hooks.class
+pageObjects\PracticePage.class
 pageObjects\LoginPage.class
+stepDefinitions\PracticeSteps.class
 pageObjects\BasePage.class
 testRunner\TestNGTestRunner.class
 utils\TestBase.class

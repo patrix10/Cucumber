@@ -1,0 +1,32 @@
+<suite name="Cucumber Test Suite" parallel="tests" thread-count="5">
+  <test name="Login Feature">
+  <parameter name="cucumber.filter.tags" value="@Login"/>
+    <classes>
+      <class name="testRunner.TestNGTestRunner"/>
+    </classes>
+  </test>
+  <test name="Home Feature">
+  <parameter name="cucumber.filter.tags" value="@Home"/>
+    <classes>
+      <class name="testRunner.TestNGTestRunner"/>
+    </classes>
+  </test>
+  <test name="Practice Feature">
+  <parameter name="cucumber.filter.tags" value="@Practice"/>
+    <classes>
+      <class name="testRunner.TestNGTestRunner"/>
+    </classes>
+  </test>
+  <test name="Courses Feature">
+  <parameter name="cucumber.filter.tags" value="@Courses"/>
+    <classes>
+      <class name="testRunner.TestNGTestRunner"/>
+    </classes>
+  </test>
+  <test name="Contact Feature">
+  <parameter name="cucumber.filter.tags" value="@Contact"/>
+    <classes>
+      <class name="testRunner.TestNGTestRunner"/>
+    </classes>
+  </test>
+</suite>

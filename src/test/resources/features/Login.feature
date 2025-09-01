@@ -1,3 +1,4 @@
+@Login
 Feature: Login functionality on Practice Test Automation site
 
 Background:

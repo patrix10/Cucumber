@@ -1,24 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="17.852">
-    <testcase classname="Login functionality on Practice Test Automation site" name="Positive LogIn test" time="8.325">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="99.337">
+    <testcase classname="Test the Practice Page" name="Testing Exceptions pannel on Practice Page" time="12.391">
         <system-out><![CDATA[Given user is on login page.................................................passed
-When user enters student and Password123....................................passed
-And clicks login button.....................................................passed
-Then user logged in successfully to home page...............................passed
+When user clicks on Practice Link...........................................passed
+And click on Test Exceptions Link...........................................passed
+Then verify you are on Exceptions Page......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Login functionality on Practice Test Automation site" name="Negative username test" time="4.167">
+    <testcase classname="Test the Practice Page" name="Test NoSuchElementException" time="14.448">
         <system-out><![CDATA[Given user is on login page.................................................passed
-When user enters "incorrectUser" and "Password123"..........................passed
-And clicks login button.....................................................passed
-Then error message is displayed for invalid username........................passed
+When user clicks on Practice Link...........................................passed
+And click on Test Exceptions Link...........................................passed
+When click on Add button....................................................passed
+Then See that new Row input field is displayed..............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Login functionality on Practice Test Automation site" name="Negative password test" time="5.087">
+    <testcase classname="Test the Practice Page" name="Test ElementNotInteractableException" time="17.588">
         <system-out><![CDATA[Given user is on login page.................................................passed
-When user gives "student" and "incorrectPassword" for login.................passed
-And clicks login button.....................................................passed
-Then error message is displayed for invalid password........................passed
+When user clicks on Practice Link...........................................passed
+And click on Test Exceptions Link...........................................passed
+When click on Add button....................................................passed
+And Type text into the second input field...................................passed
+When Push Save button.......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test the Practice Page" name="Test InvalidElementStateException" time="8.495">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user clicks on Practice Link...........................................passed
+And click on Test Exceptions Link...........................................passed
+When Clear input field......................................................passed
+And Type text into the input field..........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test the Practice Page" name="Test StaleElementReferenceException" time="14.696">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user clicks on Practice Link...........................................passed
+And click on Test Exceptions Link...........................................passed
+When Find the instructions text element.....................................passed
+When click on Add button....................................................passed
+Then Verify instruction text element is no longer displayed.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test the Practice Page" name="Test TimeoutException" time="12.195">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user clicks on Practice Link...........................................passed
+And click on Test Exceptions Link...........................................passed
+When click on Add button....................................................passed
+And Wait for 3 seconds for the second input field to be displayed...........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test the Practice Page" name="Test Positive Input List Testing" time="19.032">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user clicks on Practice Link...........................................passed
+And click on Test Exceptions Link...........................................passed
+When click on Add button....................................................passed
+And Enter "Burger" in input field with different locator....................passed
+When Push Save button.......................................................passed
+And push remove button......................................................passed
+Then Verify text removed....................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

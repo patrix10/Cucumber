@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 19, 2025 12:49:20 pm</span></a>
+<a href="#"><span class="badge badge-primary">Aug 29, 2025 05:33:59 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -71,9 +76,471 @@
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
 </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Contact</a><a class="dropdown-item" href="#">@Home</a><a class="dropdown-item" href="#">@Courses</a><a class="dropdown-item" href="#">@Login</a><a class="dropdown-item" href="#">@Practice</a>
+</ul>
+</li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test the Practice Page</p>
+            <p class="text-sm">
+              <span>5:34:00 pm</span> / <span>00:01:38:901</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test the Practice Page</h5>
+<span class='badge badge-success'>08.29.2025 5:34:00 pm</span>
+<span class='badge badge-danger'>08.29.2025 5:35:39 pm</span>
+<span class='badge badge-default'>00:01:38:901</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Testing Exceptions pannel on Practice Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.userClicksOnPracticeLink()">
+                <span>When user clicks on Practice Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.clickOnTestExceptionsLink()">
+                <span>And click on Test Exceptions Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.verifyYouAreOnExceptionsPage()">
+                <span>Then verify you are on Exceptions Page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>Test NoSuchElementException</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.userClicksOnPracticeLink()">
+                <span>When user clicks on Practice Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.clickOnTestExceptionsLink()">
+                <span>And click on Test Exceptions Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.clickOnAddButton()">
+                <span>When click on Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.seeThatNewRowInputFieldIsDisplayed()">
+                <span>Then See that new Row input field is displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="107"><span class="badge log pass-bg mr-2">Pass</span>Test ElementNotInteractableException</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.userClicksOnPracticeLink()">
+                <span>When user clicks on Practice Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.clickOnTestExceptionsLink()">
+                <span>And click on Test Exceptions Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.clickOnAddButton()">
+                <span>When click on Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.typeTextIntoTheSecondInputField()">
+                <span>And Type text into the second input field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.pushSaveButton()">
+                <span>When Push Save button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="141"><span class="badge log pass-bg mr-2">Pass</span>Test InvalidElementStateException</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.userClicksOnPracticeLink()">
+                <span>When user clicks on Practice Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.clickOnTestExceptionsLink()">
+                <span>And click on Test Exceptions Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.clearInputField()">
+                <span>When Clear input field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.typeTextIntoTheInputField()">
+                <span>And Type text into the input field</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="153"><span class="badge log pass-bg mr-2">Pass</span>Test StaleElementReferenceException</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.userClicksOnPracticeLink()">
+                <span>When user clicks on Practice Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.clickOnTestExceptionsLink()">
+                <span>And click on Test Exceptions Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.findTheInstructionsTextElement()">
+                <span>When Find the instructions text element</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.clickOnAddButton()">
+                <span>When click on Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.verifyInstructionTextElementIsNoLongerDisplayed()">
+                <span>Then Verify instruction text element is no longer displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="167"><span class="badge log pass-bg mr-2">Pass</span>Test TimeoutException</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.userClicksOnPracticeLink()">
+                <span>When user clicks on Practice Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.clickOnTestExceptionsLink()">
+                <span>And click on Test Exceptions Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.clickOnAddButton()">
+                <span>When click on Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.waitFor3SecondsForTheSecondInputFieldToBeDisplayed()">
+                <span>And Wait for 3 seconds for the second input field to be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="179"><span class="badge log pass-bg mr-2">Pass</span>Test Positive Input List Testing</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.userClicksOnPracticeLink()">
+                <span>When user clicks on Practice Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.clickOnTestExceptionsLink()">
+                <span>And click on Test Exceptions Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.clickOnAddButton()">
+                <span>When click on Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.enterTextInInputFieldWithDifferentLocator(java.lang.String)">
+                <span>And Enter "Burger" in input field with different locator</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.pushSaveButton()">
+                <span>When Push Save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.pushRemoveButton()">
+                <span>And push remove button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.PracticeSteps.verifyTextRemoved()">
+                <span>Then Verify text removed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Contact Page Functionality</p>
+            <p class="text-sm">
+              <span>5:34:00 pm</span> / <span>00:00:34:062</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Contact Page Functionality</h5>
+<span class='badge badge-success'>08.29.2025 5:34:00 pm</span>
+<span class='badge badge-danger'>08.29.2025 5:34:34 pm</span>
+<span class='badge badge-default'>00:00:34:062</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Give Credentials and submit the page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ContactSteps.userClicksOnContactLink()">
+                <span>When user clicks on Contact Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ContactSteps.contactPageMustGetOpen()">
+                <span>Then Contact page must get open</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ContactSteps.userEntersTheFollowingDetails(java.util.List<java.lang.String>)">
+                <span>When user enters the following details</span>
+      <div><table class='markup-table table '><tr><td>Pratik</td></tr><tr><td>Singh</td></tr><tr><td>HD@gmail.com</td></tr><tr><td>Muchas Gracias</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ContactSteps.userClicksTheCaptchaBox()">
+                <span>And user clicks the captcha box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ContactSteps.userClicksTheSubmitButton()">
+                <span>When user clicks the submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ContactSteps.thanksMessageMustAppear()">
+                <span>Then Thanks message must appear</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test the functionality on Courses page</p>
+            <p class="text-sm">
+              <span>5:34:00 pm</span> / <span>00:00:19:911</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test the functionality on Courses page</h5>
+<span class='badge badge-success'>08.29.2025 5:34:00 pm</span>
+<span class='badge badge-danger'>08.29.2025 5:34:20 pm</span>
+<span class='badge badge-default'>00:00:19:911</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Test Child Window Functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.CoursesSteps.user_clicks_on_courses_link()">
+                <span>When user clicks on Courses Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.CoursesSteps.courses_page_must_display()">
+                <span>Then Courses Page must display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.CoursesSteps.user_clicks_on_selenium_course_link()">
+                <span>When user clicks on Selenium Course Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.CoursesSteps.child_window_must_open()">
+                <span>Then child window must open</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.CoursesSteps.user_get_back_to_parent_window()">
+                <span>When user get back to parent window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.CoursesSteps.verify_user_is_on_parent_window()">
+                <span>Then verify user is on parent window</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
         <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
@@ -81,7 +548,7 @@
           <div class="test-detail">
             <p class="name">Login functionality on Practice Test Automation site</p>
             <p class="text-sm">
-              <span>12:49:21 pm</span> / <span>00:00:17:557</span>
+              <span>5:34:00 pm</span> / <span>00:00:29:762</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -90,9 +557,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Login functionality on Practice Test Automation site</h5>
-<span class='badge badge-success'>08.19.2025 12:49:21 pm</span>
-<span class='badge badge-danger'>08.19.2025 12:49:38 pm</span>
-<span class='badge badge-default'>00:00:17:557</span>
+<span class='badge badge-success'>08.29.2025 5:34:00 pm</span>
+<span class='badge badge-danger'>08.29.2025 5:34:29 pm</span>
+<span class='badge badge-default'>00:00:29:762</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -104,14 +571,14 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Positive LogIn test</div>
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Positive LogIn test</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Positive LogIn test</div>
+                  <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Positive LogIn test</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -142,7 +609,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>Negative username test</div>
+        <div class="node" id="55"><span class="badge log pass-bg mr-2">Pass</span>Negative username test</div>
       </div>
     </div>
         <div class="collapse">
@@ -173,7 +640,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>Negative password test</div>
+        <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>Negative password test</div>
       </div>
     </div>
         <div class="collapse">
@@ -204,6 +671,138 @@
 </div>
           </div>
         </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Testing Functionalities on Home Page</p>
+            <p class="text-sm">
+              <span>5:34:00 pm</span> / <span>00:00:32:770</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Testing Functionalities on Home Page</h5>
+<span class='badge badge-success'>08.29.2025 5:34:00 pm</span>
+<span class='badge badge-danger'>08.29.2025 5:34:33 pm</span>
+<span class='badge badge-default'>00:00:32:770</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Verifying if user is on Home Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.user_clicks_on_home_link()">
+                <span>When user clicks on Home Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.hello_message_is_displayed(java.lang.String)">
+                <span>Then "Hello" message is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.image_is_also_displayed()">
+                <span>And Image is also displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.verify_welcome_message()">
+                <span>Then verify welcome message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.verify_experience_discription_is_available()">
+                <span>And verify that Experience Discription is available</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.verify_courses_and_achievements_discriptions_are_available()">
+                <span>Then verify Courses and Achievements Discriptions are available</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.verify_blog_and_courses_link_tag_are_present()">
+                <span>And verify Blog and Courses Link tag are present</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.check_if_footer_section_is_present_or_not()">
+                <span>Then Check if footer section is present or not</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="71"><span class="badge log pass-bg mr-2">Pass</span>Check wheather SignUp for Newsletter is working properly</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.user_clicks_on_home_link()">
+                <span>When user clicks on Home Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.enter_name_and_email(java.lang.String,java.lang.String)">
+                <span>When Enter "Pratik" and "HD@gmail.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.click_on_get_xpath_button()">
+                <span>When Click on Get xpath button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.verify_you_are_on_confirmation_page()">
+                <span>Then Verify You are on Confirmation Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.get_back_to_home_page()">
+                <span>When Get back to Home Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.verify_you_are_on_home_page()">
+                <span>Then Verify You are on Home Page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -213,24 +812,320 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Contact</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Contact</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:34:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='6'>Give Credentials and submit the page</a>
+<div class="">
+<span class="badge badge-default">Test Contact Page Functionality.Give Credentials and submit the page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Home</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Home</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:34:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='8'>Verifying if user is on Home Page</a>
+<div class="">
+<span class="badge badge-default">Testing Functionalities on Home Page.Verifying if user is on Home Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:34:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='71'>Check wheather SignUp for Newsletter is working properly</a>
+<div class="">
+<span class="badge badge-default">Testing Functionalities on Home Page.Check wheather SignUp for Newsletter is working properly</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Courses</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Courses</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:34:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='7'>Test Child Window Functionality</a>
+<div class="">
+<span class="badge badge-default">Test the functionality on Courses page.Test Child Window Functionality</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@Login</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Login</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:34:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Positive LogIn test</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Practice Test Automation site.Positive LogIn test</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:34:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Positive LogIn test</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Practice Test Automation site.Positive LogIn test</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:34:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='55'>Negative username test</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Practice Test Automation site.Negative username test</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:34:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='95'>Negative password test</a>
+<div class="">
+<span class="badge badge-default">Login functionality on Practice Test Automation site.Negative password test</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">@Practice</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Practice</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:34:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='10'>Testing Exceptions pannel on Practice Page</a>
+<div class="">
+<span class="badge badge-default">Test the Practice Page.Testing Exceptions pannel on Practice Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:34:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='45'>Test NoSuchElementException</a>
+<div class="">
+<span class="badge badge-default">Test the Practice Page.Test NoSuchElementException</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:34:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='107'>Test ElementNotInteractableException</a>
+<div class="">
+<span class="badge badge-default">Test the Practice Page.Test ElementNotInteractableException</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:34:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='141'>Test InvalidElementStateException</a>
+<div class="">
+<span class="badge badge-default">Test the Practice Page.Test InvalidElementStateException</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:34:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='153'>Test StaleElementReferenceException</a>
+<div class="">
+<span class="badge badge-default">Test the Practice Page.Test StaleElementReferenceException</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:35:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='167'>Test TimeoutException</a>
+<div class="">
+<span class="badge badge-default">Test the Practice Page.Test TimeoutException</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:35:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='179'>Test Positive Input List Testing</a>
+<div class="">
+<span class="badge badge-default">Test the Practice Page.Test Positive Input List Testing</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 19, 2025 12:49:20 pm</h3>
+<h3>Aug 29, 2025 05:33:59 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 19, 2025 12:49:38 pm</h3>
+<h3>Aug 29, 2025 05:35:39 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>5</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -253,7 +1148,7 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>1</b> features passed
+<b>5</b> features passed
 </small>
 </div>
 <div>
@@ -275,7 +1170,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>14</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -295,7 +1190,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>12</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>81</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -314,27 +1209,76 @@
 </div></div>
 <script>
 var timeline = {
-"Login functionality on Practice Test Automation site":17.557
+"Test the Practice Page":98.901,"Test Contact Page Functionality":34.062,"Test the functionality on Courses page":19.911,"Login functionality on Practice Test Automation site":29.762,"Testing Functionalities on Home Page":32.77
 };
 </script>
 <div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Contact</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Home</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Courses</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Login</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Practice</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 </div>
 </div>
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
+passParent: 5,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 3,
+passChild: 14,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 12,
+passGrandChild: 81,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
